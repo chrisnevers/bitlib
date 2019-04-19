@@ -1,5 +1,5 @@
 # Bitlib 0️⃣1️⃣0️⃣1️⃣
-A simple OCaml library for bit/byte operations.
+A simple OCaml library for bit/byte operations. The purpose of this library is to provide aid to users writing binary files, NOT perform bitwise operations on objects in memory.
 
 ## Examples
 Getting the binary representation of a number.

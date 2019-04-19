@@ -1,0 +1,14 @@
+opam-version: "2.0"
+authors: "Chris Nevers <christophernevers96@gmail.com>"
+maintainer: "Chris Nevers <christophernevers96@gmail.com>"
+homepage: "https://github.com/chrisnevers/bitlib"
+dev-repo: "git+https://github.com/chrisnevers/bitlib.git"
+bug-reports: "https://github.com/chrisnevers/bitlib/issues"
+depends: "ocaml"
+descr: "A library for writing binary files"
+build: [
+  [make]
+]
+url {
+  git: "https://github.com/chrisnevers/bitlib"
+}

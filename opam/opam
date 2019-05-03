@@ -3,7 +3,7 @@ version: "0.1.1"
 authors: "Chris Nevers <christophernevers96@gmail.com>"
 maintainer: "Chris Nevers <christophernevers96@gmail.com>"
 homepage: "https://github.com/chrisnevers/bitlib"
-dev-repo: "git+https://github.com/chrisnevers/bitlib.git"
+dev-repo: "git://github.com/chrisnevers/bitlib.git"
 bug-reports: "https://github.com/chrisnevers/bitlib/issues"
 depends: "ocaml"
 descr: "A library for writing binary files"
@@ -11,5 +11,6 @@ build: [
   [make]
 ]
 url {
-  git: "https://github.com/chrisnevers/bitlib"
+  src: "https://github.com/chrisnevers/bitlib/archive/v0.0.1.tar.gz"
+  checksum: "md5=baf160670764204d983b92a76a03a325"
 }

@@ -5,7 +5,7 @@ maintainer: "Chris Nevers <christophernevers96@gmail.com>"
 homepage: "https://github.com/chrisnevers/bitlib"
 dev-repo: "git://github.com/chrisnevers/bitlib.git"
 bug-reports: "https://github.com/chrisnevers/bitlib/issues"
-depends: "ocaml"
+depends: ["ocaml", "ocamlbuild"]
 descr: "A library for writing binary files"
 build: [
   [make]

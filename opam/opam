@@ -1,5 +1,5 @@
 opam-version: "2.0"
-version: "0.1.2"
+version: "0.1.3"
 authors: "Chris Nevers <christophernevers96@gmail.com>"
 maintainer: "Chris Nevers <christophernevers96@gmail.com>"
 homepage: "https://github.com/chrisnevers/bitlib"
@@ -11,6 +11,6 @@ build: [
   [make]
 ]
 url {
-  src: "https://github.com/chrisnevers/bitlib/archive/v0.0.1.tar.gz"
+  src: "https://github.com/chrisnevers/bitlib/archive/v0.1.3.tar.gz"
   checksum: "md5=baf160670764204d983b92a76a03a325"
 }

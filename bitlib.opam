@@ -7,10 +7,9 @@ bug-reports: "https://github.com/chrisnevers/bitlib/issues"
 dev-repo: "git://github.com/chrisnevers/bitlib.git"
 synopsis: "A library for writing binary files"
 build: [
-  ["dune" "build" "-p" bitlib]
+  ["jbuilder" "build" "-p" name "-j" jobs]
+  ["jbuilder" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-
--with-test: ["dune" "runtest" "-p" bitlib]
 
 depends: [
   "dune" {build}

@@ -24,7 +24,7 @@ let to_bytes bits n =
   let rec to_byte bits cur last =
     match cur with
     | i when i = last -> 0
-    | i ->
+    | _ ->
       let bit = List.hd !bits in
       bits := List.tl !bits;
       let acc = bit * _pow 2 cur in

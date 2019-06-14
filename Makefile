@@ -1,19 +1,21 @@
-BUILD_PKGS=
-TEST_PKGS=oUnit
-BUILD_FLAGS=-Is src
-DEBUG_FLAGS=-tag 'debug'
-TEST_FLAGS=-use-ocamlfind -pkgs ${TEST_PKGS} -Is src
+# Frontend to dune.
 
-all: main
+.PHONY: default build install uninstall test clean
 
-main:
-	ocamlbuild ${BUILD_FLAGS} src/bitlib.native --
+default: build
+
+build:
+	dune build
 
 test:
-	ocamlbuild ${TEST_FLAGS} tests/test.native --
+	dune runtest -f
 
-doc:
-	ocamldoc src/**.mli -html -d docs
+install:
+	dune install
+
+uninstall:
+	dune uninstall
 
 clean:
-	ocamlbuild -clean
+	dune clean
+	git clean -dfXq

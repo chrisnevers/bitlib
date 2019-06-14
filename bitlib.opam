@@ -1,0 +1,18 @@
+opam-version: "2.0"
+maintainer: "christophernevers96@gmail.com"
+authors: ["Chris Nevers"]
+homepage: "https://github.com/chrisnevers/bitlib"
+bug-reports: "https://github.com/chrisnevers/bitlib/issues"
+dev-repo: "https://github.com/chrisnevers/bitlib.git"
+
+build: [
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" bitlib "-j" jobs]
+]
+
+build-test: ["dune" "runtest" "-p" bitlib]
+
+depends: [
+  "dune" {build}
+  "alcotest" {test}
+]
